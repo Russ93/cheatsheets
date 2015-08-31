@@ -1,0 +1,27 @@
+{
+  "name": "brushUpOnAngular",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    "Russ93 <russ93@fullsail.edu>"
+  ],
+  "description": "AngularJS",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.20",
+    "angular-route": "~1.2.20",
+    "angular-cookies": "~1.2.20",
+    "angular-resource": "~1.2.20",
+    "bootstrap": "~3.3.5",
+    "lodash": "~3.10.0",
+    "angular-ui-sortable": "~0.13.4"
+  }
+}

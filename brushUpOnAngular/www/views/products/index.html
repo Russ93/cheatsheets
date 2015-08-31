@@ -1,0 +1,42 @@
+<article class="col-xs-6 panel">
+
+	<div class="panel-heading">
+		<h3>
+			<span>Searching for:</span>
+			<small>{{SKU}}</small>
+		</h3>
+	</div>
+
+	<form class="panel-body" ng-submit="search()">
+		<div class="input-group">
+			<input type="text" class="form-control" name="SKU" ng-model="SKU" />
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="submit">Search</button>
+			</span>
+		</div>
+	</form>
+
+</article>
+
+
+<article class="col-xs-12">
+
+	<table class="table table-striped">
+		<thead>
+			<th>SKU</th>
+			<th>ASIN</th>
+			<th>AmazonTitle</th>
+			<th>ID</th>
+		</thead>
+		<tbody>
+			<tr data-product ng-repeat="product in products">
+				<modal product="product" ></modal>
+				<td>{{product.SKU}}</td>
+				<td>{{product.ASIN}}</td>
+				<td>{{product.AmazonTitle}}</td>
+				<td product='product'>{{product._id}}</td>
+			</tr>
+		</tbody>
+	</table>
+
+</article>

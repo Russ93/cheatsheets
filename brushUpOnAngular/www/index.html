@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+	<meta charset="utf-8">
+	<title>{{title}}</title>
+	<!-- HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script type="text/javascript" src="js/selectivizr.js"></script>
+	<![endif]-->
+
+	<!-- bower:js -->
+	<script src="public/bower/jquery/dist/jquery.js"></script>
+	<script src="public/bower/angular/angular.js"></script>
+	<script src="public/bower/angular-route/angular-route.js"></script>
+	<script src="public/bower/angular-cookies/angular-cookies.js"></script>
+	<script src="public/bower/angular-resource/angular-resource.js"></script>
+	<script src="public/bower/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="public/bower/lodash/lodash.js"></script>
+	<script src="public/bower/jquery-ui/jquery-ui.js"></script>
+	<script src="public/bower/angular-ui-sortable/sortable.js"></script>
+	<!-- endbower -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/{{user.theme || 'paper'}}/bootstrap.min.css">
+
+	<!--STYLES-->
+	<link rel="stylesheet" href="public/styles/main.css">
+	<!--STYLES END-->
+
+	<script src="//localhost:35729/livereload.js"></script>
+
+</head>
+
+<body>
+	<ng-include src="'/views/partials/nav.html'"></ng-include>
+
+	<section class="container" ng-view></section>
+
+	<!--SCRIPTS-->
+	<script src="public/js/app.js"></script>
+	<!--SCRIPTS END-->
+</body>
+
+</html>

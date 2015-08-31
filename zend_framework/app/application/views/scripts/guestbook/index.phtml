@@ -1,0 +1,13 @@
+<!-- application/views/scripts/guestbook/index.phtml -->
+
+<p>
+	<a href="<?=$this->url(['controller' => 'guestbook', 'action' => 'sign']) ?>">Sign Our Guestbook</a>
+</p>
+
+Guestbook Entries: <br />
+<dl>
+<? foreach ($this->entries as $entry): ?>
+	<dt><?= $this->escape($entry->email) ?></dt>
+	<dd><?= $this->escape($entry->comment) ?></dd>
+<? endforeach ?>
+</dl>

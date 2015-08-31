@@ -1,0 +1,33 @@
+{
+  "name": "codestuff",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "rSchlup",
+      "email": "russ93@fullsail.edu"
+    }
+  ],
+  "dependencies": {
+    "bower": "*",
+    "grunt-bower-install": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "*",
+    "grunt-sails-linker": "^0.10.1",
+    "grunt-sass": "*",
+    "include-all": "*",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.2",
+    "express-session": "^1.11.3",
+    "js-sha256": "^0.3.0",
+    "mongojs": "^1.2.1",
+    "mocha": "*",
+    "should": "*",
+    "supertest": "*"
+  }
+}

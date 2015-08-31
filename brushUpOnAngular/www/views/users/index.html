@@ -1,0 +1,54 @@
+<section class="col-xs-3">
+	<article class="panel panel-success">
+
+		<div class="panel-heading">User Info</div>
+		<div class="panel-body">
+			<ul class="list-unstyled">
+				<li>Username: {{user.username}}</li>
+				<li>Firstname: {{user.firstname}}</li>
+				<li>Lastname: {{user.lastname}}</li>
+			</ul>
+		</div>
+
+	</article>
+</section>
+
+<section class="col-xs-6">
+
+	<article class="panel panel-default">
+
+		<div class="panel-heading">Custom Info</div>
+		<form class="panel-body" ng-submit="saveTheme()">
+
+			<div class="form-group">
+				<label>Theme</label>
+				<select ng-model="user.theme" name="theme" class="form-control text-capitalize">
+					<option>{{user.theme}}</option>
+					<option value="paper">default</option>
+					<option>cerulean</option>
+					<option>cosmo</option>
+					<option>cyborg</option>
+					<option>darkly</option>
+					<option>flatly</option>
+					<option>journal</option>
+					<option>lumen</option>
+					<option>paper</option>
+					<option>readable</option>
+					<option>sandstone</option>
+					<option>simplex</option>
+					<option>slate</option>
+					<option>spacelab</option>
+					<option>superhero</option>
+					<option>united</option>
+					<option>yeti</option>
+				</select>
+			</div>
+
+			<div class="text-right">
+				<button type="submit" class="btn btn-primary btn-label">Save</button>
+			</div>
+
+		</div>
+
+	</article>
+</section>

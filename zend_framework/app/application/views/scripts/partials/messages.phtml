@@ -1,0 +1,23 @@
+<? if(array_key_exists('error', $_SESSION)): ?>
+	<div class="alert alert-danger col-xs-12 text-center errors" role="alert"><?=$_SESSION['error'] ?></div>
+	<? unset($_SESSION['error']); ?>
+<? endif ?>
+
+<? if(array_key_exists('warning', $_SESSION)): ?>
+	<div class="alert alert-warning col-xs-12 text-center errors" role="alert"><?=$_SESSION['warning'] ?></div>
+	<? unset($_SESSION['warning']); ?>
+
+<? endif ?>
+
+<? if(array_key_exists('info', $_SESSION)): ?>
+	<div class="alert alert-info col-xs-12 text-center errors" role="alert"><?=$_SESSION['info'] ?></div>
+	<? unset($_SESSION['info']); ?>
+
+<? endif ?>
+
+<? if(array_key_exists('success', $_SESSION)): ?>
+
+	<div class="alert alert-success col-xs-12 text-center errors" role="alert"><?=$_SESSION['success'] ?></div>
+	<? unset($_SESSION['success']); ?>
+
+<? endif ?>

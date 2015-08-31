@@ -1,0 +1,40 @@
+<? include 'partials/login.phtml'; ?>
+
+<section class="col-xs-offset-3 col-xs-6">
+
+	<article class="col-xs-12 well">
+
+		<h2>Sign Up</h2>
+
+		<form method="POST" action="<?=$this->url(['controller' => 'index', 'action' => 'signup']) ?>">
+			<ul class="col-xs-12 list-unstyled">
+				<li class="col-xs-6">
+					<label>Firstname</label>
+					<input type="text" class="form-control" name="firstname" />
+				</li>
+
+				<li class="col-xs-6">
+					<label>Lastname</label>
+					<input type="text" class="form-control" name="lastname" />
+				</li>
+
+				<li class="col-xs-12">
+					<label>Username</label>
+					<input type="text" class="form-control" name="username" />
+				</li>
+
+				<li class="col-xs-12">
+					<label>Password</label>
+					<input type="text" class="form-control" name="password" />
+				</li>
+			</ul>
+
+			<div class="col-xs-12">
+				<button type="submit" class="btn btn-block btn-primary">Sign Up</button>
+			</div>
+
+		</form>
+
+	</article>
+
+</section>
